@@ -92,3 +92,4 @@ Deleting expenses
 
 Rendering child components
 
+This project was deployed using vercel:https://week-1-code-challenge-expense-tracker-delta.vercel.app/

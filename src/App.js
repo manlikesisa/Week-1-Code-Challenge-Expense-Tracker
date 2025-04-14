@@ -8,7 +8,7 @@ const App = () => {
 
 
   const [expenses, setExpenses] = useState([
-    { id: 1, name: 'Bmw', amount: 10, description: 'Newly Imported cars', category: 'Cars', date: '2025-07-08' },
+    { id: 1, name: 'Bmw', amount: 1000, description: 'Newly Imported cars', category: 'Cars', date: '2025-07-08' },
     { id: 2, name: 'Banana', amount: 40, description: 'To be exported', category: 'Fruits', date: '2025-09-02' },
     { id: 3, name: 'Samsung', amount: 155, description: 'Newly imported phones', category: 'cellular devices', date: '2025-04-03' },
     { id: 4, name: 'Chopsticks', amount: 430, description: 'For Dinner at a local restaurant', category: 'Food', date: '2023-04-05' },
