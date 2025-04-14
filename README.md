@@ -68,3 +68,27 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+In this project a user can add an expense.
+
+In the form component it is responsible for capturing input for a new response and then validates and send the data via props to sync with the local state in the app component and then resets the form after submission and displays the new expense.If the add expense button is clicked and the form is not filled it will display"please fill out this field" indicating to the user that they must fill out the form first.
+
+In the Expensetable component it Receives a list of expenses via the items prop and then displays them in a table format with columns for name, description, amount, category, and date and it also handles empty states gracefully if there are no expenses to show.
+
+In the searchbar component,It displays a single input field and sends the typed value which in this case it is the searched expense back to the parent usig the onSearch function prop.The paceholder is used to give the user a hint on what is needed in this case it is to search for an expense.
+
+The App.js handles :
+
+Storing expenses
+
+Adding new ones
+
+Searching/filtering
+
+Deleting expenses
+
+Rendering child components
+

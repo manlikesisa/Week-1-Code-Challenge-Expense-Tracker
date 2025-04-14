@@ -1,24 +1,38 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f6f8;
+  background: linear-gradient(to right, #4f046f, blue);
   margin: 0;
   padding: 0;
 }
 
 .container {
-  max-width: 900px;
-  margin: 2rem auto;
-  background-color: white;
+  max-width: 1200px;
+  margin: 3rem auto;
+  background-color: #ffffff;
   padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 h1, h2 {
-  color: #333;
+  color: #222;
+  margin-bottom: 1rem;
 }
 
-form input, form button {
+.app-grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.form-section {
+  flex: 1;
+  min-width: 280px;
+  max-width: 350px;
+}
+
+.form-section form input,
+.form-section form button {
   padding: 10px;
   margin: 5px 0;
   width: 100%;
@@ -28,51 +42,45 @@ form input, form button {
   box-sizing: border-box;
 }
 
-form button {
-  background-color: #28a745;
+.form-section form button {
+  background-color: #000;
   color: white;
-  border: none;
-  margin-top: 10px;
+  font-weight: bold;
   cursor: pointer;
 }
 
-form button:hover {
-  background-color: #218838;
+.form-section form button:hover {
+  background-color: #444;
 }
 
 .search-bar input {
   padding: 10px;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
   border: 1px solid #ccc;
   border-radius: 6px;
+  font-size: 1rem;
+}
+
+.table-section {
+  flex: 2;
+  min-width: 400px;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 1rem;
 }
 
-table th, table td {
-  border: 1px solid #ddd;
+table th,
+table td {
   padding: 12px;
   text-align: left;
+  border-bottom: 1px solid #ddd;
 }
 
 table th {
-  background-color: #f2f2f2;
-}
-
-button.delete-btn {
-  background-color: #dc3545;
+  background-color: #000;
   color: white;
-  border: none;
-  padding: 6px 12px;
-  border-radius: 5px;
-  cursor: pointer;
 }
 
-button.delete-btn:hover {
-  background-color: #b52a37;
-}

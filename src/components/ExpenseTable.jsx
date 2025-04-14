@@ -2,7 +2,7 @@ import React from 'react';
 
 const ExpenseTable = ({ items }) => {
   return (
-    <table border="0.5" cellPadding="3" width="100%">
+    <table>
       <thead>
         <tr>
           <th>Name</th>

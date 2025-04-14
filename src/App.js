@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import ExpenseForm from './components/ExpenseForm';
 import ExpenseTable from './components/ExpenseTable';
 import SearchBar from './components/SearchBar';
+import './App.css';
 
 const App = () => {
 
@@ -24,20 +25,29 @@ const App = () => {
     exp.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
-  return (
-    <div style={{ padding: '2rem', fontFamily: 'Arial' }}>
-      <h1>Expense Tracker</h1>
-      <p>Start taking control of your finances and life. Record, categorise, and analyse your spending.</p>
 
-      <h2>Add Expense</h2>
-      <ExpenseForm onAddExpense={addExpense} />
 
-      <SearchBar onSearch={setSearchTerm} />
-
-      <h2>Expense List</h2>
-      <ExpenseTable items={filteredExpenses} />
-    </div>
-  );
+    return (
+        <div className="container">
+          <h1>Expense Tracker</h1>
+          <p>Start taking control of your finances and life. Record, categorise, and analyse your spending.</p>
+      
+          <div className="app-grid">
+            <div className="form-section">
+              <h2>Add Expense</h2>
+              <ExpenseForm onAddExpense={addExpense} />
+            </div>
+      
+            <div className="table-section">
+              <SearchBar onSearch={setSearchTerm} />
+              <h2>Expense List</h2>
+              <ExpenseTable items={filteredExpenses} />
+            </div>
+          </div>
+        </div>
+      );
+      
+  
 };
 
 export default App;
